@@ -1,0 +1,117 @@
+@font-face {
+    font-family: stolzl; 
+    src: url(StolzlRegular.ttf); 
+}
+p{
+    text-align: center;
+    z-index: 100;
+    width: 95%;
+    word-wrap: break-word;
+}
+body{
+    margin: 0;
+    font-family: stolzl;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    animation: gradient 10s infinite linear; 
+}
+.settings{
+    float: right;
+}
+.main_wrapper{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation: main 3s 1;
+}
+.main_wrapper:after {
+    width: 100vw;
+    height: 100vh;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.322);
+    z-index: 2;
+}
+.status{  
+    font-size: 18px;
+    color: rgb(209, 209, 209);
+}
+.cover{
+    width: 300px;
+    height: 300px;
+    border-radius: 12px;
+}
+.img{
+    z-index: 999;
+}
+.name{
+    font-size: 42px;
+    margin-bottom: 5px;
+}
+.more{
+    font-size: 22px;
+}
+.auth {
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #ffffff;
+    opacity: 0;
+    pointer-events: none; 
+    transition: 0.5s all;
+}
+.auth.active{
+    opacity: 1;
+    pointer-events: all; 
+    transition: 0.5s all;
+}
+.search{
+    display: inline-flex;
+    padding: 10px;
+    align-items: center;
+    border: 1px solid #a5a4a4d7;
+    border-radius: 4px;
+}
+.search-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    order: -1;
+}
+input, textarea {
+    font-family: stolzl; 
+    outline: none;
+    border: none;
+    background: none;    
+}
+.main{
+    animation: main 5s 1;
+}
+@keyframes main{
+    0%   { opacity:0;}
+    100% { opacity:1;}
+}
+@keyframes gradient {
+    0% {
+        background-position: 80% 0%;
+    }
+    50% {
+        background-position: 20% 100%;
+    }
+    100% {
+        background-position: 80% 0%;
+    }
+}

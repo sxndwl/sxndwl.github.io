@@ -38,6 +38,12 @@ html,body{
 .img_shiki{
     background: url(img/shiki.svg) center no-repeat;
 }
+.img_weather{
+    background: url(img/cover.svg) center no-repeat;
+}
+.img_now{
+    background: url(img/now.svg) center no-repeat;
+}   
 .card{
     display: flex;
     justify-content: space-between;
@@ -81,9 +87,6 @@ a{
 font-style: normal;
 font-weight: 700;
 font-size: 16px;
-}
-.img_weather{
-    background: url(img/cover.svg) center no-repeat;
 }
 .disclaimer{
     display:none;

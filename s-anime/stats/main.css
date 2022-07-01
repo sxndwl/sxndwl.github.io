@@ -1,0 +1,14 @@
+.wrapper_anime{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.bg{
+    min-height: 100vh;
+}
+@media (max-width: 500px) {
+    .wrapper_anime{
+        justify-content: center;
+    }
+}

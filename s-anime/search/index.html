@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>s'anime</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="shortcut icon" href="https://sxndwl.xyz/favicon/airplay_video_outline_28%20(1).ico" type="image/x-icon">
+    <link rel='stylesheet' type='text/css' media='screen' href='/search/main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/base.css'>
+   <script src='main.js'></script>
+   <script src='/base.js'></script>
+   <link rel="icon" href="https://sxndwl.xyz/s'anime/img/airplay_video_outline_28%20(1).svg" sizes="any"><!-- 32×32 -->
+   <link rel="icon" href="https://sxndwl.xyz/s'anime/img/airplay_video_outline_28%20(1).svg" type="image/svg+xml">
+   <link rel="apple-touch-icon" href="https://sxndwl.xyz/s'anime/img/airplay_video_outline_28%20(1).svg"><!-- 180×180 -->
+</head>
+<body>
+    <div class="popup__bg">
+        <div class="popup">
+            <p class="about center">Как только вы нажмете на кнопку 'Get Access Token' вас перенаправит на страницу с токеном. Вы должны скопировать и вставить его ниже. После этого нажмите кнопку 'Check Access Token'</p>
+            <button class="auth_button"><a target="_blank" class="search_link" href="https://shikimori.one/oauth/authorize?client_id=yqz2V-vKKE3pNJz2F7s2YYANGgRYfXYh9TlfxlMWcJ4&redirect_uri=urn%3Aietf%3Awg%3Aoauth%3A2.0%3Aoob&response_type=code&scope=user_rates">Get Access Token</a></button>
+            <div class="search auth_wrapper">
+                <input id="authInput" type="text" class="search-field" placeholder="Access Token">
+                <img src="/img/Left Icon.svg" alt="" class="search-icon">
+              </div>
+              <button onclick="getauth()" class="auth_button">Check Access Token</button>
+        </div>
+    </div>
+    <div class="bg">
+        <header>
+            <div class="main_wrapper">
+                <div class="header_wrapper">
+                    <div class="logo">
+                        <a href="/s'anime/">
+                            <img width="40px" height="40px" src="/img/airplay_video_outline_28 (1).svg" alt="logo">
+                        </a>
+                    </div>
+                    <nav class="nav">
+                        <button id="profile_img" class="header_button">
+                        </button>
+                        <button id="sign_in" onclick="popup()" class="header_button">
+                        Sign in
+                        <img class="arrow" src="/img/door_arrow_left_outline_28 (1).svg" alt="Log in">
+                        </button>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div class="main_wrapper">
+            <div class="text_wrapper">
+                <h1 class="title">s'anime</h1>
+                <p class="about">List of anime with screenshots, description, actors and so on coded by <a href="/" class="founder">sxndwl</a></p>
+                <div class="input_wrapper">
+                    <div class="search">
+                        <input id="searchInput" type="text" class="search-field" placeholder="Search Animes">
+                        <img src="/img/search-normal.svg" alt="" class="search-icon">
+                      </div>
+                      <button onclick="search()" class="search_button"><p class="search_link">Search</p>
+                        <img class="arrow" src="/img/search-white.svg" alt="">
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="no_results">
+        <div class="main_wrapper">
+            <h1 class="title">Sorry, No results found</h1>
+        </div>
+        </div>
+        <div class="main_wrapper">
+            <div id="animes" class="anime_wrapper"></div>
+        <div class="line"></div>
+        <div id="search" class="anime_wrapper"></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,223 @@
+.info_wrapper{
+    display: flex;
+    flex-direction: row;
+}
+.base_info{
+    margin-left: 50px;
+}
+.add_info{
+    margin-left: 50px;
+    margin-top: 100px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.name{
+    margin-left: 25px;
+}
+.movie_cover{
+    margin-top: 50px;
+    width: 480px;
+    height: 720px; 
+    border-radius: 24px;
+}
+.description{
+    padding-top: 25px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: #8E95A9;
+}
+.screenshots{
+    margin-top: 50px;
+    width: 100%;
+}
+.screenshots_wrapper{
+    display: flex;
+}
+.movie_screen{
+    padding-top: 15px;
+    width: 97%;
+    height: auto;
+}
+.genres_wrapper{
+    align-items: center;
+    flex-wrap: wrap;
+}
+.anime_card:first-child{
+    margin-right: 15px;
+}
+.anime_card{
+    width: auto;
+    max-width: 195px;
+    height: auto;
+    min-height: 200px;
+}
+.cover{
+    width: 195px;
+    height: 235px;
+}
+.animes_person{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.space_bet{
+    display: flex;
+    justify-content: space-between;
+}
+.a_title{
+    margin-top: 20px;
+}
+.animes_preson_wrapper{
+    display: none;
+}
+.add{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 44px;
+    background: rgba(0, 0, 0, 0.315);
+    border-radius: 8px;
+    color: #7B6EF6;
+    padding: 8px;
+    margin-top: 20px;
+}
+.select{ 
+    background: none;
+    outline:none;
+    width: 354px;
+    height: 60px;
+    font-family: stolzl;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #6a7699;
+    appearance: none; 
+    overflow: hidden;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    background: url('/img/Group\ 2\ \(2\).svg') no-repeat right center;
+    outline: 0;
+  }
+.auth_button{
+    outline: none;
+    border: 0;
+    cursor: pointer;
+}  
+form{
+    text-align: center;
+    padding-top: 20px;
+}
+#del{
+    color: #E64646;
+    display: none;
+}
+.roles{
+    margin-top: 50px;
+    width: 80%;
+}
+.roles_card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 25px;
+}
+.roles_wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.role_img{
+    width: 148px;
+    height: 158px;
+    border-radius: 20%;
+}
+#add_w{
+    width: 100%;
+}
+@media (max-width: 1190px) {
+    .base_info{
+        margin-left: 0;
+    }
+    .movie_cover{
+        width: 370px;
+        height: 620px;
+    }
+    .name{
+        margin: auto;
+        text-align: center;
+    }
+    .b-text_with_paragraphs{
+        width: 90%;
+    }
+}
+@media (max-width: 550px) {
+    .role_img{
+        width: 128px;
+        height: 138px;
+    }
+    #status_wrapper{
+        width: 100%;
+    }
+    #maxlength{
+        width: 100%;
+    }
+    .roles{
+        width: 95%;
+    }
+    .search-field{
+        width: 100%;
+    }
+    .select{
+        width: 72%;
+        height: 52px;
+    }
+    .info_wrapper{
+        flex-direction: column;
+    }
+    .movie_wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .movie_cover{
+        width: 310px;
+        height: 460px;
+        text-align: center;
+        margin: auto;
+        margin-top: 25px;
+    }
+    .screenshots_wrapper{
+        flex-direction: column;
+        align-items: center;
+    }
+    .base_info{
+        margin: 0;
+    }
+    .add_info{
+        margin-left: 0;
+        margin-top: 25px;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .b-text_with_paragraphs{
+        width: 100%;
+    }
+    .movie_screen{
+        padding-top: 15px;
+        width: 100%;
+        height: auto;
+    }
+    .anime_card{
+        margin-right: 25px;
+    }
+    #animes{
+        width: 90vw;
+        justify-content: flex-start;
+        overflow-x: scroll;
+        flex-wrap: nowrap;
+    }
+}
